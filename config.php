@@ -19,7 +19,7 @@ for more details.
 $dbhost = "192.168.0.100:3307";			// Database host
 $dbuser = "arduino";			// Database user
 $dbpass = "arduinotest";			// Database password
-$dbname = "mate3_php";			// Database name
+$dbname = "mate3_mod";			// Database name
 
 // UPDATES
 $token = "1234";			// Token
@@ -34,12 +34,12 @@ $timezone = "Europe/Bucharest";	//See http://www.php.net/manual/en/timezones.php
 $system_name = "Home6D";		// System Name
 $system_voltage = 48;			// Nominal system voltage
 $system_batt_capacity = 375;	// Total Ah capacity of your battery bank
-$system_absorbVoltage = 58.8;	// Absorb voltage for your chargers
+$system_absorbVoltage = 60.0;	// Absorb voltage for your chargers
 $system_endAmps = 6;			// The FNDC configured return amps setting
-$pv_wattage = 5000;				// Total wattage of your photo voltaic arrays
+$pv_wattage = 4000;				// Total wattage of your photo voltaic arrays
 $gen_rating = 2000;				// Total wattage of your generator (or AC IN)
-$inverter_max = 3800;			// Total ouput of your inverters (cumulative)
-$charger_max = 6000;			// Total charger output of your chargers (cumulative)
+$inverter_max = 4000;			// Total ouput of your inverters (cumulative)
+$charger_max = 4000;			// Total charger output of your chargers (cumulative)
 $ags_port = 0;					// Port used for AGS. Leave 0 if you don't use AGS.
 $temp_comp = TRUE;				// Temperature Compensation, leave this on as long as you have an RTS installed.
 
@@ -47,11 +47,11 @@ $temp_comp = TRUE;				// Temperature Compensation, leave this on as long as you 
 // If you leave any of these blank, a name will be automatically
 // generated based on the device type and port number.
 $deviceLabels = array(
-	1  => "FXRV3048",
-	2  => "FlexMax60",
-	3  => "FlexMax80",
-	4  => "FLEXnet DC",
-	5  => "",
+	1  => "VFXR3048E_Master",
+	2  => "VFXR3048E_Slave",
+	3  => "FlexMax60",
+	4  => "FlexMax80",
+	5  => "FlexNetDC",
 	6  => "",
 	7  => "",
 	8  => "",
